@@ -1,10 +1,14 @@
-import React from "react"
-import { Outlet } from "react-router-dom"
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Header from "@/components/organisms/Header";
 
 const Layout = () => {
-  return (
+return (
     <div className="min-h-screen bg-gray-50">
-      <Outlet />
+      <Header />
+      <main className="pt-16">
+        <Outlet />
+      </main>
     </div>
   )
 }

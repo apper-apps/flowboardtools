@@ -1,13 +1,14 @@
-import React, { useState, useEffect, useMemo } from "react"
-import Header from "@/components/organisms/Header"
-import PipelineStage from "@/components/organisms/PipelineStage"
-import DealModal from "@/components/organisms/DealModal"
-import Loading from "@/components/ui/Loading"
-import Error from "@/components/ui/Error"
-import Empty from "@/components/ui/Empty"
-import { dealService } from "@/services/api/dealService"
-import { stageService } from "@/services/api/stageService"
-import { toast } from "react-toastify"
+import React, { useEffect, useMemo, useState } from "react";
+import { dealService } from "@/services/api/dealService";
+import { stageService } from "@/services/api/stageService";
+import { useAuth } from "@/contexts/AuthContext";
+import { toast } from "react-toastify";
+import DealModal from "@/components/organisms/DealModal";
+import Header from "@/components/organisms/Header";
+import PipelineStage from "@/components/organisms/PipelineStage";
+import Loading from "@/components/ui/Loading";
+import Error from "@/components/ui/Error";
+import Empty from "@/components/ui/Empty";
 
 const PipelinePage = () => {
   const [deals, setDeals] = useState([])
