@@ -1,0 +1,38 @@
+[
+  {
+    "id": "stage-1",
+    "name": "New Lead",
+    "order": 1,
+    "color": "bg-blue-500"
+  },
+  {
+    "id": "stage-2",
+    "name": "Qualified",
+    "order": 2,
+    "color": "bg-purple-500"
+  },
+  {
+    "id": "stage-3",
+    "name": "Proposal",
+    "order": 3,
+    "color": "bg-amber-500"
+  },
+  {
+    "id": "stage-4",
+    "name": "Negotiation",
+    "order": 4,
+    "color": "bg-orange-500"
+  },
+  {
+    "id": "stage-5",
+    "name": "Won",
+    "order": 5,
+    "color": "bg-emerald-500"
+  },
+  {
+    "id": "stage-6",
+    "name": "Lost",
+    "order": 6,
+    "color": "bg-red-500"
+  }
+]
